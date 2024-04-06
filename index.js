@@ -11,7 +11,6 @@ const carouselContainer = document.querySelector(".carousel-container");
   if(carouselContainer.scrollLeft < 0) {
     carouselContainer.scrollLeft = 0;
   }
-  console.log(carouselContainer.scrollLeft);
 });
 
 prevArrowMobile.addEventListener("click", function() {
@@ -20,29 +19,21 @@ prevArrowMobile.addEventListener("click", function() {
   if(carouselContainer.scrollLeft < 0) {
     carouselContainer.scrollLeft = 0;
   }
-  console.log(carouselContainer.scrollLeft);
-  // const slide = document.querySelector(".carousel-slide")
-  // carouselContainer.scrollBy({
-  //   left: -slide.clientWidth,
-  //   behavior: "smooth"
-  // });
-  // console.log(carouselContainer.scrollLeft);
 });
 
 nextArrow.addEventListener("click", function() {
-  carouselContainer.scrollBy({
-    left: carouselContainer.offsetWidth,
-    behavior: "smooth"
-  });
-  console.log(carouselContainer.scrollLeft);
+  const slide = document.querySelector(".carousel-slide")
+  carouselContainer.scrollLeft = carouselContainer.scrollLeft + slide.clientWidth;
+  if(carouselContainer.scrollLeft > carouselContainer.scrollWidth) {
+    carouselContainer.scrollLeft = carouselContainer.scrollWidth;
+  }
 });
 
 nextArrowMobile.addEventListener("click", function() {
   const slide = document.querySelector(".carousel-slide")
-  carouselContainer.scrollBy({
-    left: slide.clientWidth,
-    behavior: "smooth"
-  });
-  console.log(carouselContainer.scrollLeft);
+  carouselContainer.scrollLeft = carouselContainer.scrollLeft + slide.clientWidth;
+  if(carouselContainer.scrollLeft > carouselContainer.scrollWidth) {
+    carouselContainer.scrollLeft = carouselContainer.scrollWidth;
+  }
 });
 });
