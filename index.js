@@ -13,8 +13,9 @@ const carouselContainer = document.querySelector(".carousel-container");
 });
 
 prevArrowMobile.addEventListener("click", function() {
+  const slide = document.querySelector(".carousel-slide")
   carouselContainer.scrollBy({
-    left: -200,
+    left: -slide.clientWidth,
     behavior: "smooth"
   });
 });
@@ -27,8 +28,9 @@ nextArrow.addEventListener("click", function() {
 });
 
 nextArrowMobile.addEventListener("click", function() {
+  const slide = document.querySelector(".carousel-slide")
   carouselContainer.scrollBy({
-    left: 200,
+    left: slide.clientWidth,
     behavior: "smooth"
   });
 });
