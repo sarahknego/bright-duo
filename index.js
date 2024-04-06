@@ -14,7 +14,7 @@ const carouselContainer = document.querySelector(".carousel-container");
 
 prevArrowMobile.addEventListener("click", function() {
   carouselContainer.scrollBy({
-    left: -carouselContainer.offsetWidth,
+    left: -200,
     behavior: "smooth"
   });
 });
@@ -28,7 +28,7 @@ nextArrow.addEventListener("click", function() {
 
 nextArrowMobile.addEventListener("click", function() {
   carouselContainer.scrollBy({
-    left: carouselContainer.offsetWidth,
+    left: 200,
     behavior: "smooth"
   });
 });
