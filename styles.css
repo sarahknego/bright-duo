@@ -391,6 +391,8 @@ select, input, textarea{
     resize: none;
     position: relative;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 select{
