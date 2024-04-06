@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bright Duo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="home">
+    <header>
+      <div class="home-logo">
+        <a href="#home"
+          ><img src="images/full-logo.svg" alt="bright duo logo" class="logo"
+        /></a>
+        <a href="#home" class="site-name"> Bright Duo</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Web designs from <br />brilliant minds</h1>
+        <a href="#form" class="btn">Get a quote today</a>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio-top">
+          <h2>Our portfolio</h2>
+          <div class="scroll-buttons">
+            <button class="prev"></button>
+            <button class="next"></button>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <a href="https://www.pivothealth.com/" target="_blank" class="link">
+              <img
+                src="images/pivot-homepage.png"
+                alt="pivot health homepage"
+              />
+              <h3>Pivot Health</h3>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a
+              href="https://www.tipsiti.com/business"
+              target="_blank"
+              class="link"
+            >
+              <img
+                src="images/tipsiti-homepage.png"
+                alt="tipsiti marketing homepage"
+              />
+              <h3>Tipsiti Marketing Site</h3>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="https://www.builder.io/" target="_blank" class="link">
+              <img
+                src="images/builder-homepage.png"
+                alt="builder.io homepage"
+              />
+              <h3>Builder.io</h3>
+            </a>
+          </div>
+        </div>
+        <div class="scroll-buttons-mobile">
+          <button class="prev prev-mobile"></button>
+          <button class="next next-mobile"></button>
+        </div>
+      </section>
+      <section class="form-section" id="form">
+        <div class="form-content">
+          <form>
+            <input type="text" placeholder="Name *" required />
+            <input type="email" placeholder="Email *" required />
+            <input type="tel" placeholder="Business Phone *" required />
+            <label for="represent-business" class="form-group-horizontal">
+              <label class="switch">
+                <input type="checkbox" value="yes" id="represent-business" />
+                <span class="slider"></span>
+              </label>
+              I represent a business
+            </label>
+            <label for="business-size" class="form-group-vertical">
+              <span class="detail">Business Size: *</span>
+              <div class="dropdown-wrapper">
+                <img
+                  src="images/dropdown-arrow.svg"
+                  class="dropdown-arrow"
+                  alt="dropdown arrow"
+                  width="30px"
+                  height="30px"
+                />
+                <select id="business-size">
+                  <option value="1-10">1-10 people</option>
+                  <option value="11-100">11-100 people</option>
+                  <option value="100+">100+ people</option>
+                </select>
+              </div>
+            </label>
+            <p class="detail">What serivces do you need? *</p>
+            <label for="web design" class="form-group-horizontal">
+              <input type="checkbox" value="web design" id="web design" />
+              <div class="checkbox">
+                <img
+                  src="images/white-check.svg"
+                  alt="white checkmark"
+                  class="checkmark"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              Web Design
+            </label>
+            <label for="graphic design" class="form-group-horizontal">
+              <input
+                type="checkbox"
+                value="graphic design"
+                id="graphic design"
+              />
+              <div class="checkbox">
+                <img
+                  src="images/white-check.svg"
+                  alt="white checkmark"
+                  class="checkmark"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              Graphic Design
+            </label>
+            <label for="identity refresh" class="form-group-horizontal">
+              <input
+                type="checkbox"
+                value="identity refresh"
+                id="identity refresh"
+              />
+              <div class="checkbox">
+                <img
+                  src="images/white-check.svg"
+                  alt="white checkmark"
+                  class="checkmark"
+                  width="30px"
+                  height="30px"
+                />
+              </div>
+              Identity Refresh
+            </label>
+            <p class="detail">Tell us about your project: *</p>
+            <textarea
+              id="project-details"
+              placeholder="Project details here..."
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+
+          <div class="form-text">
+            <h2 class="quote">Get a quote</h2>
+            <p>
+              Ready to get started? Tell us more about you and your team, and
+              share some details about your project. Our team will reach out as
+              soon as we can!
+            </p>
+          </div>
+        </div>
+        <img src="images/blue-bean.svg" class="bean" />
+        <img src="images/red-bean.svg" class="bean" />
+        <div class="rectangle"></div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/full-logo.svg" alt="bright duo logo" />
+      <div class="footer-text">
+        <h2>Bright Duo</h2>
+        <p>© 2024</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
