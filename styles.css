@@ -393,10 +393,12 @@ select, input, textarea{
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
+    color: var(--bd-black);
 }
 
 select{
     width: 100%;
+    background-color: var(--bd-white);
 }
 
 textarea {
