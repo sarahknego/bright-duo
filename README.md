@@ -17,5 +17,5 @@ The styling of the CSS of this project brought some challenges, the background o
 
 ## How to install:
 1. Fork and clone this repository
-2. Npm install
-3. Npm start
+2. `npm install`
+3. `npm start`
