@@ -1,7 +1,7 @@
 # Bright Duo
 
 ## Premise: 
-Bright Duo is a page the houses the company’s independent projects. It also includes a form to submit information to get a quote from the team.
+Bright Duo is a page that houses the company’s independent projects. It also includes a form to submit information to get a quote from the team.
 
 ## Technologies used: 
 This project primarily used HTML and CSS, and JavaScript was used to help with the functionality of some of the features.
